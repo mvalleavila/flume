@@ -37,8 +37,8 @@ limitations under the License.
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
     <!-- Java compiler configuration -->
-    <sourceJavaVersion>1.6</sourceJavaVersion>
-    <targetJavaVersion>1.6</targetJavaVersion>
+    <sourceJavaVersion>1.7</sourceJavaVersion>
+    <targetJavaVersion>1.7</targetJavaVersion>
 
     <!-- defaults for flaky test and focused test exclusions -->
     <test.exclude.pattern>$</test.exclude.pattern> <!-- junk pattern -->
@@ -46,7 +46,7 @@ limitations under the License.
     <siteUrlDeployment>file://people.apache.org/www/incubator.apache.org/flume</siteUrlDeployment>
     <stagingDirectory>${project.basedir}/target/docs</stagingDirectory>
 
-    <avro.version>1.7.3</avro.version>
+    <avro.version>1.7.6</avro.version>
     <elasticsearch.version>0.90.1</elasticsearch.version>
   </properties>
 
@@ -91,7 +91,7 @@ limitations under the License.
           <dependency>
             <groupId>org.apache.hadoop</groupId>
             <artifactId>hadoop-test</artifactId>
-            <version>${hadoop.version}</version>
+            <version>1.2.1</version>
           </dependency>
         </dependencies>
       </dependencyManagement>
@@ -106,8 +106,8 @@ limitations under the License.
         </property>
       </activation>
       <properties>
-        <hadoop.version>2.0.0-alpha</hadoop.version>
-        <hbase.version>0.94.2</hbase.version>
+        <hadoop.version>2.2.0</hadoop.version>
+        <hbase.version>0.94.16</hbase.version>
         <hadoop.common.artifact.id>hadoop-common</hadoop.common.artifact.id>
         <thrift.version>0.8.0</thrift.version>
       </properties>
@@ -666,7 +666,7 @@ limitations under the License.
       <dependency>
         <groupId>com.google.guava</groupId>
         <artifactId>guava</artifactId>
-        <version>10.0.1</version>
+        <version>11.0.2</version>
       </dependency>
 
       <dependency>
@@ -747,7 +747,7 @@ limitations under the License.
         <groupId>com.google.protobuf</groupId>
         <artifactId>protobuf-java</artifactId>
         <scope>compile</scope>
-        <version>2.4.1</version>
+        <version>2.5.0</version>
       </dependency>
 
       <dependency>
